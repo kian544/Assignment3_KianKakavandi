@@ -7,7 +7,7 @@ public class EagerSingletonTest {
     public void TestPreCreation(){
         for(int i=0;i<3;i++){
             EagerSingleton e=EagerSingleton.getInstance(i);
-            assertEquals(i, e.getId());
+            assertEquals(i, e.getId());//ensuring the singletons are precreated
         }
     }
 
