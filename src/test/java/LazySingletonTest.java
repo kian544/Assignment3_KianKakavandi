@@ -12,4 +12,11 @@ public class LazySingletonTest {
         LazySingleton l2=LazySingleton.getInstance(1);
         assertEquals(1,l2.getId());
     }
+
+    @Test
+    public void TestInstanceReturn(){
+        LazySingleton l1=LazySingleton.getInstance(1);
+        LazySingleton l2=LazySingleton.getInstance(1);
+        assertSame(l1,l2); //ensuring the same instantiation is returned, same as Eager
+    }
 }
