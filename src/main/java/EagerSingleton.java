@@ -6,7 +6,7 @@ public class EagerSingleton {
     static {
         for (int i = 0; i < 3; i++) {
             instances[i] = new EagerSingleton(i);
-            System.out.println("EagerSingleton " + i + "instantiated");
+            System.out.println("EagerSingleton " + i + " instantiated");
         }
     }
 
