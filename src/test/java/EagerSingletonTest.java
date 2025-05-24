@@ -10,4 +10,12 @@ public class EagerSingletonTest {
             assertEquals(i, e.getId());
         }
     }
+
+    @Test
+    public void TestInstanceReturn(){
+        EagerSingleton e1=EagerSingleton.getInstance(1);
+        EagerSingleton e2=EagerSingleton.getInstance(1);
+        assertSame(e1,e2); //ensuring the same instantiation is returned
+    }
+
 }
