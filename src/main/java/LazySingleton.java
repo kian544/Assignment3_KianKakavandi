@@ -4,6 +4,12 @@
 public class LazySingleton {
 
     private static LazySingleton[]  instances = new LazySingleton[3];
+    static{
+        for(int i = 0; i < 3; i++){
+            instances[i] = new LazySingleton(i);
+            System.out.println("LazySingleton " + i + " instantiated");
+        }
+    }
 
     private int id;
 
