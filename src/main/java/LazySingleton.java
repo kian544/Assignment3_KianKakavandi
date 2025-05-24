@@ -30,7 +30,7 @@ public class LazySingleton {
      * @return the LazySingleton
      * @throw OOB exception
      */
-    private static LazySingleton getInstance(int index){
+    public static LazySingleton getInstance(int index){
         if(index<0 || index>2){
             throw new IllegalArgumentException("index out of bounds, must be between 0 and 2");
         }
