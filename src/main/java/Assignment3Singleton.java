@@ -9,12 +9,12 @@ public class Assignment3Singleton {
                 Thread.sleep(2000);
             } catch (InterruptedException e) {}
         }
-        /**for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
             LazySingleton s = LazySingleton.getInstance(r.nextInt(3));
             System.out.println("Retrieved lazy singleton " + s.getId());
             try {
                 Thread.sleep(2000);
             } catch (InterruptedException e) {}
-        }  **/
+        }
     }
 } 
