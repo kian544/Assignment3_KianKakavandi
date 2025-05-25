@@ -1,3 +1,9 @@
+//------------------------------------------------------
+// Assignment 3
+// Written by: Kian Kakavandi, 2091078
+// For SES350 Section 601 – Spring 2025
+//--------------------------------------------------------
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
