@@ -4,3 +4,11 @@ public interface AnimalFossilTypes {
 interface SkyAnimal extends AnimalFossilTypes {
     String getFlying();
 }
+
+interface LandAnimal extends AnimalFossilTypes {
+    String getWalking();
+}
+
+interface SeaAnimal extends AnimalFossilTypes {
+    String getSwimming();
+}
