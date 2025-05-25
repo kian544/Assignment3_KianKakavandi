@@ -8,10 +8,11 @@ public class CenozoicAnimalFactory implements AnimalAbstractFactory {
 
 }
 
+//Land Animals
 class WollyRhino implements LandAnimal {
     /**
      *
-     * @return the name and action the animal is doing
+     * @return the name and action the landAnimal is doing
      */
     public String getName(){ return "Wolly Rhino"; }
     public String getWalking(){return "running!";}
@@ -27,7 +28,18 @@ class CaveLion implements LandAnimal {
     public String getWalking(){return "walking!";}
 }
 
+//sea animals
 class Otodus implements SeaAnimal {
+    /**
+     *
+     * @return the name and the actions of the SeaAnimals
+     */
     public String getName(){ return "Otodus"; }
     public String getSwimming(){return "hunting";}
 }
+
+class Whale implements SeaAnimal {
+    public String getName(){ return "Whale"; }
+    public String getSwimming(){return "swimming!";}
+}
+
