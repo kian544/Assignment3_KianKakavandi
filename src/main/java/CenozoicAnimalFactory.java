@@ -26,3 +26,8 @@ class CaveLion implements LandAnimal {
     public String getName(){ return "Cave Lion"; }
     public String getWalking(){return "walking!";}
 }
+
+class Otodus implements SeaAnimal {
+    public String getName(){ return "Otodus"; }
+    public String getSwimming(){return "hunting";}
+}
