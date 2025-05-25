@@ -12,4 +12,13 @@ public class AnimalTests {
         assertEquals("Cave Lion", landAnimals.get(0).getName());
         assertEquals("walking!", landAnimals.get(0).getWalking());
     }
+
+    @Test
+    public void SeaAnimalCreationTest(){
+        CenozoicAnimalFactory cenozoicAnimalFactory = new CenozoicAnimalFactory();
+        List<SeaAnimal> seaAnimals = cenozoicAnimalFactory.createSeaAnimals();
+        assertEquals(2, seaAnimals.size());
+        assertEquals("Otodus", seaAnimals.get(1).getName());
+        assertEquals("hunting!", seaAnimals.get(1).getSwimming());
+    }
 }

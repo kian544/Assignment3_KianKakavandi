@@ -46,7 +46,7 @@ class Otodus implements SeaAnimal {
      * @return the name and the actions of the SeaAnimals
      */
     public String getName(){ return "Otodus";}
-    public String getSwimming(){return "hunting";}
+    public String getSwimming(){return "hunting!";}
 }
 
 class Whale implements SeaAnimal {
