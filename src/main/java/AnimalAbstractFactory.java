@@ -1,8 +1,12 @@
 import java.util.List;
 
 public interface AnimalAbstractFactory {
+    /**
+     *
+     * @return the animals set to the creation type
+     */
     String getEra();
-    List<SkyAnimal> skyAnimals;
-    List<LandAnimal> landAnimals;
-    List<SeaAnimal> seaAnimals;
+    List<SkyAnimal> createSkyAnimals();
+    List<LandAnimal> createLandAnimals();
+    List<SeaAnimal> createSeaAnimals();
 }
