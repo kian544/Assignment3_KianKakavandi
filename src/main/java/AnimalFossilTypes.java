@@ -9,6 +9,7 @@ interface LandAnimal extends AnimalFossilTypes {
     String getWalking();
 }
 
+
 interface SeaAnimal extends AnimalFossilTypes {
     String getSwimming();
 }
