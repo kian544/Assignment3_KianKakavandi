@@ -9,7 +9,12 @@ public class CenozoicAnimalFactory implements AnimalAbstractFactory {
 }
 
 class WollyRhino implements LandAnimal {
+    /**
+     *
+     * @return the name and action the animal is doing
+     */
     public String getName(){ return "Wolly Rhino"; }
     public String getWalking(){return "stomping!";}
 }
+
 
