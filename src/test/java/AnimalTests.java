@@ -21,4 +21,14 @@ public class AnimalTests {
         assertEquals("Otodus", seaAnimals.get(1).getName());
         assertEquals("hunting!", seaAnimals.get(1).getSwimming());
     }
+
+    @Test
+    public void SkyAnimalCreationTest(){
+        CenozoicAnimalFactory cenozoicAnimalFactory = new CenozoicAnimalFactory();
+        List<SkyAnimal> skyAnimals = cenozoicAnimalFactory.createSkyAnimals();
+        assertEquals(1, skyAnimals.size());
+        assertEquals("Argentavis", skyAnimals.get(0).getName());
+        assertEquals("flapping!", skyAnimals.get(0).getFlying());
+
+    }
 }
